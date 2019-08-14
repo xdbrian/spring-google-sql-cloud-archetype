@@ -10,13 +10,10 @@ import java.util.ArrayList;
 
 public class UsuarioController {
 
-    @Autowired
-    UsuarioService usuarioService;
-
     @GetMapping(path = "/usuarios")
-    private ArrayList<Usuario> getUsuarios() {
+    private String getUsuarios() {
         System.out.println("Buscando usuarios");
-        return usuarioService.obtenerTodosUsuarios();
+        return "dsfsf";
     }
 
     @GetMapping(path = "/")
